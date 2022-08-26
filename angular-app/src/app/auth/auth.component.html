@@ -1,0 +1,32 @@
+<div class="conatiner">
+    <div class="row justify-content-md-center">
+        <div class="col-md-8">
+            <!-- <div class="alert-danger" *ngIf="error != null" style="padding:5px;border-radius: 5px;">
+                <h5>{{error}}</h5>
+            </div> -->
+            <app-alert
+      [message]="error"
+      *ngIf="error"
+      (close)="onHandleError()"
+       ></app-alert>
+            <div *ngIf="isloading" style="text-align:center">
+             <app-loading></app-loading>
+            </div>
+            <form (ngSubmit)="Onsubmit(formvalues)" #formvalues="ngForm" *ngIf="!isloading">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" ngModel #email="ngModel" required email>
+                  <span style="color:red;" *ngIf="!email.valid &&  email.touched">***Invalid email</span>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password" ngModel #pass="ngModel"required minlength="6">
+                  <span style="color:red;" *ngIf="!pass.valid &&  pass.touched">***provide strong password</span>
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="!formvalues.valid">{{Islogin ? "login" : "signup"}}</button> | <button type="button" class="btn btn-primary" (click)="Onswitchmode()">{{Islogin ? "switch to signup" : "switch to login"}}</button>
+              </form>
+        </div>
+       
+    </div>
+  
+</div>

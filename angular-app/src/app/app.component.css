@@ -1,0 +1,17 @@
+.navbar{
+    background-color: rgb(3, 3, 3);
+    
+}
+.nav-link{
+    font-size:medium;
+    font-family :sans-serif;
+     color: solid black;
+     font-weight: bolder;
+     
+}
+.navbar-brand{
+    font-size: large;
+   font-family :sans-serif;
+    color: solid black;
+    font-weight: bolder;
+}

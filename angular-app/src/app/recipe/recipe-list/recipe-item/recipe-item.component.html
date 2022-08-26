@@ -1,0 +1,23 @@
+<!-- <a [routerLink]="[index]" 
+  
+    style="cursor:pointer;color:black;text-decoration: black;">
+  <div class="card">
+    <div class="card-body">
+     <h5 class="card-title" style="text-decoration: underline;">{{recipe.name}}</h5>
+     <p class="card-text">{{recipe.description}}</p>
+   </div>
+   <img [src]="recipe.imagepath" class="card-img-top" alt="{{recipe.name}}">
+ </div>
+</a>
+   -->
+   <a [routerLink]="[index]" 
+    style="cursor:pointer;color:black;text-decoration: black;">
+  <div class="card">
+    <img class="card-img-top" [src]="recipe.imagepath" alt="{{recipe.name}}">
+    <div class="card-body">
+      <h5 class="card-title">{{recipe.name}}</h5>
+      <p class="card-text">{{recipe.description}}</p>
+     
+    </div>
+  </div>
+</a>

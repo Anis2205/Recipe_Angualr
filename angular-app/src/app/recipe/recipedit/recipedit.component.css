@@ -1,0 +1,43 @@
+img {
+    float: left;
+    width:  100%;
+    height: 300px;
+    object-fit: cover;
+  }
+.sample{
+    display: flex;
+    width:55%
+  }
+#iname1{
+    flex:65%
+  }
+#iamount{
+  margin-left: 10px;
+  flex:25%
+  }
+#danger{
+    flex:3%;
+    margin-left: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+      .sample{
+        width:100%
+      }
+    }
+  

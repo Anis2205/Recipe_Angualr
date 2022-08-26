@@ -1,0 +1,56 @@
+ <!-- <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" >Recipe Book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li >
+          <a class="nav-link" [routerLink]="['/recipes']"  routerLinkActive="active" >Recipes</a>
+        </li>
+        <li >
+          <a class="nav-link" [routerLink]="['/shoppinglist']"  routerLinkActive="active" >Shopping List</a>
+        </li>
+        <li class="nav-item dropdown" appdropdown >
+          <a class="nav-link dropdown-toggle " style="cursor:pointer" >
+            Manage<span class="carat"></span>
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" style="cursor:pointer" >Save Data</a></li> 
+           <li><a class="dropdown-item" style="cursor:pointer" >Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>   -->
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+   <a class="nav-link" [routerLink]="['']"  routerLinkActive="active" > <a class="navbar-brand" >Recipe Book</a></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li><a class="nav-link" [routerLink]="['/recipes']"  routerLinkActive="active" >Recipes</a></li>
+        <li><a class="nav-link" [routerLink]="['/shoppinglist']"  routerLinkActive="active" >Shopping List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item dropdown" appdropdown >
+          <a class="nav-link dropdown-toggle " style="cursor:pointer" routerLinkActive="active" >
+            Manage<span class="carat"></span>
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" style="cursor:pointer" (click)="onsave()" >Save Data</a></li> 
+           <li><a class="dropdown-item" style="cursor:pointer" (click)="onfetchdata()">Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+  
+   
+    
